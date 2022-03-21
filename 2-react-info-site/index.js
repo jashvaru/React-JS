@@ -2,7 +2,7 @@ const navBar = (
     <div>
         <img src="React-icon.png" width="50px" alt="React-logo"></img>
         <p>React JS</p>
-        <h1>Fun facts About React</h1>
+        <h1>Fun facts About React hi</h1>
         <ul>
             <li>Was first released in 2013</li>
             <li>Was originally created by Jordan Walke</li>

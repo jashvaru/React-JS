@@ -1,18 +1,83 @@
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Inter, sans-serif";
+  background-color: #282d35;
+  background-image: url(../src/images/reactLogoHalf.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.nav-title,
+.nav-text {
+  margin: 0;
+}
+
+.nav-title {
+  margin-right: auto;
+  color: #61dafb;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav-text {
+  color: #deebf8;
+  font-weight: 600;
+}
+
 .nav-logo {
-    width: 60px;
+  width: 60px;
+  height: 40px;
+  padding-right: 10px;
 }
 
-.nav-item {
-    list-style: none;
-    display: flex;
- 
+.main {
+  padding: 57px 27px;
+  color: #ffffff;
 }
 
-.nav-item > li {
-    padding:10px
+.main-title {
+  margin: 0;
+  position: absolute;
+  width: 424px;
+  height: 41px;
+  left: 27px;
+  top: 148px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39.06px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+}
+
+.main-facts {
+  position: absolute;
+  width: 390px;
+  height: 190px;
+  left: 65px;
+  top: 200px;
+}
+
+.main-facts > li {
+  line-height: 19px;
+  padding-block: 8px;
+}
+
+.main-facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
 }

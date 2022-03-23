@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "../src/components/navbar";
+import HeroSection from "../src/components/hero";
 
 function Application() {
     return (
         <div>
-            <h1>Hello world</h1>
+            <Navbar />
+            <HeroSection />
         </div>
     );
 }

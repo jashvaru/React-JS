@@ -16,7 +16,7 @@ function Card(props) {
             </div>
             <p>{props.title}</p>
             <p>
-                <span className="bold">{props.price}$</span> /person
+                <span className="card-price">{props.price}$</span> /person
             </p>
         </div>
     );

@@ -2,21 +2,26 @@ import React from "react";
 import Star from "../images/star.png";
 
 function Card(props) {
+    let badgetext;
+    if (props.item.openSpots === 0) {
+        badgetext = "SOLD OUT";
+    } else if (props.item.location === "Online") {
+        badgetext = "ONLINE";
+    }
+
     return (
-        <div className="card" >
-            <img
-                src={`images/${props.img}`}
-                className="card-img"
-            ></img>
+        <div className="card">
+            {badgetext && (<div className="card-badge">{badgetext}</div>)}
+            <img src={`images/${props.item.img}`} className="card-img"></img>
             <div className="card-stats">
                 <img src={Star} alt="star" className="card-star"></img>
-                <span>{props.rating} </span>
-                <span className="gray">({props.reviewCount}) . </span>
-                <span className="gray">{props.country}</span>
+                <span>{props.item.stats.rating} </span>
+                <span className="gray">({props.item.stats.reviewCount}) . </span>
+                <span className="gray">{props.item.location}</span>
             </div>
-            <p>{props.title}</p>
+            <p>{props.item.title}</p>
             <p>
-                <span className="card-price">{props.price}$</span> /person
+                <span className="card-price">{props.item.price}$</span> /person
             </p>
         </div>
     );

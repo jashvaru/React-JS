@@ -9,12 +9,14 @@ function Application() {
         return (
             <Card
                 key={item.id}
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                country={item.location}
-                title={item.title}
-                price={item.price}
+                item={item}
+                // img={item.coverImg}
+                // rating={item.stats.rating}
+                // reviewCount={item.stats.reviewCount}
+                // country={item.location}
+                // title={item.title}
+                // price={item.price}
+                // openSpots={item.openSpots}
             />
         );
     });
@@ -22,6 +24,7 @@ function Application() {
     return (
         <div>
             <Navbar />
+            <HeroSection />
             <section className="card-list">{cardData}</section>
         </div>
     );

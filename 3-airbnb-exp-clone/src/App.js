@@ -10,6 +10,7 @@ function Application() {
             <Card
                 key={item.id}
                 item={item}
+                name={"jash"}
             />
         );
     });

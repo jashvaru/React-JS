@@ -2,6 +2,9 @@ import React from "react";
 import Star from "../images/star.png";
 
 function Card(props) {
+    console.log(props);
+    console.log(props.item);
+    console.log(props.name);
     let badgetext;
     if (props.item.openSpots === 0) {
         badgetext = "SOLD OUT";
